@@ -4,3 +4,4 @@ use App\Http\Controllers\ChirpController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ChirpController::class, 'index']);
+Route::get('indexJson', [ChirpController::class, 'indexJson']);

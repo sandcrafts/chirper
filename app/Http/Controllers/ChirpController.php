@@ -7,6 +7,32 @@ use Illuminate\Http\Request;
 class ChirpController extends Controller
 {
     /**
+     * Return json of chirps for postman.
+     */
+    public function indexJson()
+    {
+        $chirps = [
+            [
+                'author' => 'Jane Doe',
+                'message' => 'Just deployed my first Laravel app! 🚀',
+                'time' => '5 minutes ago',
+            ],
+            [
+                'author' => 'John Smith',
+                'message' => 'Laravel makes web development fun again!',
+                'time' => '1 hour ago',
+            ],
+            [
+                'author' => 'Alice Johnson',
+                'message' => 'Working on something cool with Chirper...',
+                'time' => '3 hours ago',
+            ],
+        ];
+
+        return response()->json($chirps);
+    }
+
+        /**
      * Display a listing of the resource.
      */
     public function index()
