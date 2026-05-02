@@ -12,5 +12,6 @@
 This project was built by following a Laravel tutorial.
 https://laravel.com/learn/getting-started-with-laravel
 
-It allows users to signin, create chirps, edit and delete.
+It is an attempt to build a X like platform where users can login and post text.
+It allows users to signin, create chirps, edit and delete them.
 
